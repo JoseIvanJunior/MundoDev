@@ -74,7 +74,6 @@ const styles = StyleSheet.create({
   }
 })
 
-
 Componente Header.js
 
 import React, { Component } from 'react'
@@ -126,7 +125,6 @@ const styles = StyleSheet.create({
     }
 });
 
-
 Card.js
 
 import React, { Component } from 'react'
@@ -143,7 +141,6 @@ export default class Card extends Component {
         );
     }
 }
-
 
 Componente Description.js
 
@@ -206,13 +203,11 @@ export default class Description extends Component {
                                             />
                                             <Text style={styles.texto}>{item.weight} Kg</Text>
                                         </View>
-
                                     </View>
                                     <View style={styles.buttonContainer}>
                                         {item.when == 'today' ?
                                             <Text style={[styles.textButton, { backgroundColor: '#FD3C29', opacity: 1.0, borderColor: '#FD3C29' }]}>HOJE</Text>
                                             : <Text style={styles.textButton}>HOJE</Text>}
-
                                         {item.when == 'yesterday' ?
                                             <Text style={[styles.textButton, { backgroundColor: '#19B996', opacity: 1.0, borderColor: '#19B996' }]}>ONTEM</Text>
                                             : <Text style={styles.textButton}>ONTEM</Text>}
@@ -326,7 +321,6 @@ export default class Card extends Component {
                 </View>
             )
         }
-
         var activity = 0;
         return (
             <View style={styles.card}>
@@ -355,7 +349,6 @@ export default class Card extends Component {
         )
     }
 }
-
 
 const styles = StyleSheet.create({
     card: {
