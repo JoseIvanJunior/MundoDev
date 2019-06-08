@@ -3,6 +3,7 @@ import { StyleSheet, View, Image, ActivityIndicator, ScrollView, FlatList } from
 import Icon from 'react-native-vector-icons/FontAwesome'
 import LinearGradient from 'react-native-linear-gradient'
 
+//import Imagens from '../../../assets/img/img'
 import dataJson from '../../../data/data.json'
 
 export default class Card extends Component {
@@ -37,14 +38,14 @@ export default class Card extends Component {
                         pagingEnabled={true}
                         showsHorizontalScrollIndicator={false}
                         data={this.state.dataFilters}
-                        renderItem={({ item }) => {
+                        renderItem={({ item: { image } }) => {
                             activity++;
                             return (
                                 <LinearGradient colors={['#7F38F4', '#F22B48']} style={styles.bubble}>
                                     {activity == '1' || activity == '3' ?
                                         <Icon name="check-circle" size={20} style={styles.checkIcon} /> : null}
                                     <Image
-                                    //source={item.image}
+                                    //source={Imagens[image]}
                                     />
                                 </LinearGradient>
                             )
