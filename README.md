@@ -17,6 +17,7 @@ React Native Environment Info:
       react: 16.8.3 => 16.8.3 
       react-native: 0.59.8 => 0.59.8 
 
+
 Downloads e Instalação
 
 • A fonte utilizada é MontSerrat, em diferentes variações, e pode ser encontrada gratuitamente para download na internet.
